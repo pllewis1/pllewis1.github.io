@@ -43,6 +43,11 @@ a:hover {
 section {
   text-align: center;
   margin: 0 auto; }
+  section a {
+    margin: 3vmin;
+    text-decoration: none; }
+  section embed {
+    margin-bottom: 5vmin; }
 
 .fancy-enter {
   opacity: 0.01; }
