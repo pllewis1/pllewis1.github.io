@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Hind);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  background: #FFF; }
+
+header {
+  font-family: 'Hind', sans-serif; }
+
+span {
+  color: #FAFAFA; }
+
+a:hover {
+  color: #d0d0d0; }
+
+.outerWrap {
+  width: 70%;
+  background: #0984C6;
+  margin: 3vmin auto 0 auto;
+  border: 2px solid #000;
+  border-radius: 8vmin; }
+
+.herobg {
+  border-top-left-radius: 8vmin;
+  border-top-right-radius: 8vmin; }
+
+.headerNav {
+  border-bottom: 2px solid #000;
+  background: #171618; }
+
+.navButton {
+  width: 24%;
+  text-align: center;
+  margin-bottom: 0; }
+  .navButton:hover {
+    font-size: 16px; }
+
+section {
+  text-align: center;
+  margin: 0 auto; }
+
+.fancy-enter {
+  opacity: 0.01; }
+
+.fancy-enter.fancy-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in; }
+
+.fancy-leave {
+  opacity: 0; }
+
+.fancy-leave.fancy-leave-active {
+  opacity: 0; }
+
+p {
+  color: #FFF;
+  text-indent: 12vmin;
+  line-height: 1.7;
+  font-size: 2.8vmin;
+  margin: 15px;
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+h1 {
+  color: #FF5722;
+  text-align: left;
+  margin: 2.6vmin;
+  border-bottom: 2px solid black;
+  font-family: 'Slabo 27px', serif;
+  font-size: 5vmin;
+  text-shadow: .3vmin .3vmin black; }
+
+h2 {
+  color: #000;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.dlResume {
+  text-align: center;
+  margin-left: 0;
+  display: block;
+  font-size: 3.5vmin; }
+
+.footer {
+  width: 100%;
+  text-align: center;
+  background: #FF5722;
+  border-top: 2px solid #000;
+  border-bottom-left-radius: 8vmin;
+  border-bottom-right-radius: 8vmin; }
+  .footer a {
+    font-size: 10vmin;
+    margin: 7%;
+    color: #BEC2C3; }
+    .footer a:hover {
+      color: #fff; }
+
+.portImgContainer {
+  margin: 2% auto;
+  padding: 3%;
+  border-bottom: 2px solid black;
+  box-sizing: initial;
+  width: 60vmin; }
+  .portImgContainer:hover a {
+    z-index: 1; }
+  .portImgContainer:last-of-type {
+    border-bottom: none; }
+
+.portfolio {
+  width: 60vmin;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  background: #000;
+  transition: opacity 1s ease; }
+  .portfolio:hover {
+    opacity: .5; }
+
+.hidden {
+  z-index: -1;
+  text-decoration: none;
+  transition: 0.5s ease;
+  margin: 0 5%;
+  position: relative;
+  top: 33vmin;
+  left: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 4.5vmin; }
+  .hidden:hover {
+    z-index: 1;
+    color: #d0d0d0; }
+    .hidden:hover + a .hidden {
+      z-index: 1; }
+    .hidden:hover ~ img {
+      opacity: .5; }
+
+.contact h2 {
+  display: block;
+  text-align: center; }
