@@ -108,7 +108,8 @@ h2 {
   box-sizing: initial;
   width: 60vmin; }
   .portImgContainer:hover a {
-    z-index: 1; }
+    z-index: 1;
+    transition: ease, z-index 0.6s; }
   .portImgContainer:last-of-type {
     border-bottom: none; }
   .portImgContainer h2 {
@@ -130,7 +131,7 @@ h2 {
 .hidden {
   z-index: -1;
   text-decoration: none;
-  transition: 0.5s ease;
+  transition: 0.5s ease, z-index;
   margin: 0 5%;
   position: relative;
   top: 33vmin;
