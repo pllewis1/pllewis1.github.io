@@ -62,9 +62,11 @@ p {
   text-indent: 12vmin;
   line-height: 1.7;
   font-size: 2.8vmin;
-  margin: 15px;
+  margin: 3vmin;
   text-align: left;
   font-family: 'Source Sans Pro', sans-serif; }
+  p:last-of-type {
+    margin-bottom: 5vmin; }
 
 h1 {
   color: #FF5722;
