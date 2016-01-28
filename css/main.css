@@ -113,7 +113,11 @@ h2 {
     font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
     text-shadow: 2px 2px black;
-    color: #9E9E9E; }
+    color: #9E9E9E;
+    font-size: 3.5vmin;
+    margin-bottom: 0; }
+    .portImgContainer h2:first-of-type {
+      margin-top: 10vmin; }
   .portImgContainer a {
     color: #9E9E9E; }
 
@@ -136,7 +140,8 @@ h2 {
   top: 33vmin;
   left: 0px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 4.5vmin; }
+  font-size: 4.5vmin;
+  text-shadow: .2vmin .2vmin black; }
   .hidden:hover {
     z-index: 1;
     color: #FF5722; }
