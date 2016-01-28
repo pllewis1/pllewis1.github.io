@@ -1,5 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Hind);
-@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
 html {
   box-sizing: border-box; }
 
@@ -7,10 +8,12 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #FFF; }
+  background: #464646;
+  background-image: url("../assets/cheap_diagonal_fabric.png");
+  background-blend-mode: color-burn; }
 
 header {
-  font-family: 'Hind', sans-serif; }
+  font-family: 'Raleway', sans-serif; }
 
 span {
   color: #FAFAFA; }
@@ -20,9 +23,10 @@ a:hover {
 
 .outerWrap {
   width: 70%;
-  background: #0984C6;
+  background-image: url("../assets/leatherbg.jpg");
+  background-size: cover;
   margin: 3vmin auto 0 auto;
-  border: 2px solid #000;
+  border: .3vmin solid #9D9E9E;
   border-radius: 8vmin; }
 
 .herobg {
@@ -30,15 +34,17 @@ a:hover {
   border-top-right-radius: 8vmin; }
 
 .headerNav {
-  border-bottom: 2px solid #000;
-  background: #171618; }
+  border-top: .3vmin solid #9D9E9E;
+  border-bottom: .3vmin solid #9D9E9E;
+  background: rgba(158, 158, 158, 0.39); }
 
 .navButton {
   width: 24%;
   text-align: center;
   margin-bottom: 0; }
-  .navButton:hover {
-    font-size: 16px; }
+
+.home article {
+  margin: 2vmin 4vmin 5vmin 4vmin; }
 
 section {
   text-align: center;
@@ -49,27 +55,14 @@ section {
   section embed {
     margin-bottom: 5vmin; }
 
-.fancy-enter {
-  opacity: 0.01; }
-
-.fancy-enter.fancy-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in; }
-
-.fancy-leave {
-  opacity: 0; }
-
-.fancy-leave.fancy-leave-active {
-  opacity: 0; }
-
 p {
-  color: #FFF;
+  color: #9E9E9E;
   text-indent: 12vmin;
   line-height: 1.7;
-  font-size: 2.8vmin;
+  font-size: 2.2vmin;
   margin: 3vmin;
   text-align: left;
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Railway', sans-serif; }
   p:last-of-type {
     margin-bottom: 5vmin; }
 
@@ -78,13 +71,13 @@ h1 {
   text-align: left;
   margin: 2.6vmin;
   border-bottom: 2px solid black;
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 5vmin;
   text-shadow: .3vmin .3vmin black; }
 
 h2 {
-  color: #000;
-  font-family: 'Source Sans Pro', sans-serif; }
+  color: #0088CE;
+  font-family: 'Open Sans', sans-serif; }
 
 .dlResume {
   text-align: center;
@@ -96,7 +89,7 @@ h2 {
   width: 100%;
   text-align: center;
   background: #FF5722;
-  border-top: 2px solid #000;
+  border-top: .3vmin solid #9D9E9E;
   border-bottom-left-radius: 8vmin;
   border-bottom-right-radius: 8vmin; }
   .footer a {
@@ -107,50 +100,66 @@ h2 {
       color: #fff; }
 
 .portImgContainer {
-  margin: 2% auto;
-  padding: 3%;
   border-bottom: 2px solid black;
   box-sizing: initial;
+  margin: 10vmin auto 18vmin auto;
   width: 60vmin; }
   .portImgContainer:hover a {
     z-index: 1;
-    transition: ease, z-index 0.6s; }
+    transition: ease, z-index 1s; }
   .portImgContainer:last-of-type {
     border-bottom: none; }
   .portImgContainer h2 {
-    font-family: Roboto, sans-serif;
+    font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
     text-shadow: 2px 2px black;
-    color: #FFFFFF; }
+    color: #9E9E9E; }
+  .portImgContainer a {
+    color: #9E9E9E; }
 
 .portfolio {
   width: 60vmin;
   height: auto;
   display: block;
   margin: 0 auto;
-  background: #000;
-  transition: opacity 1s ease; }
+  background: #0088CE;
+  box-shadow: 1.5vmin 1.5vmin 5px #000; }
   .portfolio:hover {
     opacity: .5; }
 
 .hidden {
   z-index: -1;
   text-decoration: none;
-  transition: 0.5s ease, z-index;
+  transition: 1s ease, z-index;
   margin: 0 5%;
   position: relative;
   top: 33vmin;
   left: 0px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 4.5vmin; }
   .hidden:hover {
     z-index: 1;
-    color: #d0d0d0; }
+    color: #FF5722; }
     .hidden:hover + a .hidden {
       z-index: 1; }
     .hidden:hover ~ img {
       opacity: .5; }
 
-.contact h2 {
-  display: block;
-  text-align: center; }
+.contact {
+  padding-bottom: 5vmin; }
+  .contact i {
+    font-size: 7vmin;
+    color: #FF5722;
+    width: 100%;
+    text-align: center; }
+    .contact i:hover {
+      color: #BEC2C3; }
+  .contact h2 {
+    display: block;
+    text-align: center;
+    font-size: 4vmin; }
+    .contact h2 a {
+      color: #FF5722;
+      text-decoration: none; }
+      .contact h2 a:hover {
+        color: #BEC2C3; }
