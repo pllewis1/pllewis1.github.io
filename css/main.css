@@ -22,12 +22,15 @@ a:hover {
   color: #d0d0d0; }
 
 .outerWrap {
-  width: 70%;
+  width: 85%;
   background-image: url("../assets/leatherbg.jpg");
   background-size: cover;
   margin: 3vmin auto 0 auto;
   border: .3vmin solid #9D9E9E;
   border-radius: 8vmin; }
+  @media screen and (max-width: 1000px) {
+    .outerWrap {
+      width: 100%; } }
 
 .herobg {
   border-top-left-radius: 8vmin;
@@ -42,6 +45,10 @@ a:hover {
   width: 24%;
   text-align: center;
   margin-bottom: 0; }
+  @media screen and (max-width: 832px) {
+    .navButton {
+      width: inherit;
+      margin-left: 2%; } }
 
 .home article {
   margin: 2vmin 4vmin 5vmin 4vmin; }
@@ -50,10 +57,18 @@ section {
   text-align: center;
   margin: 0 auto; }
   section a {
-    margin: 3vmin;
+    margin: 3vmin; }
+
+.resume h2 {
+  display: block;
+  text-align: center;
+  font-size: 3vmin;
+  margin-bottom: 10vmin; }
+  .resume h2 a {
+    color: #FF5722;
     text-decoration: none; }
-  section embed {
-    margin-bottom: 5vmin; }
+    .resume h2 a:hover {
+      color: #BEC2C3; }
 
 p {
   color: #9E9E9E;
@@ -65,6 +80,9 @@ p {
   font-family: 'Railway', sans-serif; }
   p:last-of-type {
     margin-bottom: 5vmin; }
+  @media screen and (max-width: 1000px) {
+    p {
+      font-size: 3.5vmin; } }
 
 h1 {
   color: #FF5722;
